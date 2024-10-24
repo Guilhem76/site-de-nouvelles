@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Nouvelles du Chat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .logo {
+            width: 100px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .category {
+            margin: 20px 0;
+            width: 90%;
+        }
+        .category-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .gallery {
+            display: flex;
+            overflow-x: auto;
+            padding: 10px 0;
+        }
+        .item {
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        .item img {
+            width: 150px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .item img:hover {
+            transform: scale(1.1);
+        }
+        .item p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://i.postimg.cc/SnKydvf2/Le-Chat-png.png" alt="Logo" class="logo">
+        <h1>Les Nouvelles du Chat</h1>
+    </header>
+    <div class="container">
+        <!-- Catégorie Policier -->
+        <div class="category">
+            <div class="category-title">Policier</div>
+            <div class="gallery">
+                <div class="item" onclick="window.location.href='le_silence_des_temoins.html';">
+                    <img src="https://i.postimg.cc/HJcTD8KT/Le-Silence-des-Temoins-png.png" alt="Le Silence des Témoins">
+                    <p>Lire "Le Silence des Témoins"</p>
+                </div>
+                <div class="item" onclick="window.location.href='au_coeur_de_la_tempete.html';">
+                    <img src="https://i.postimg.cc/4nzNxt3d/Au-Coeur-de-la-Tempete-png.png" alt="Au Cœur de la Tempête">
+                    <p>Lire "Au Cœur de la Tempête"</p>
+                </div>
+                <div class="item" onclick="window.location.href='lecho_des_turbines.html';">
+                    <img src="https://i.postimg.cc/y3XVpqG9/L-Echo-des-Turbines-png.png" alt="L'Écho des Turbines">
+                    <p>Lire "L'Écho des Turbines"</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Catégorie Romance -->
+        <div class="category">
+            <div class="category-title">Romance</div>
+            <div class="gallery">
+                <div class="item" onclick="window.location.href='les_lettres_du_coeur.html';">
+                    <img src="https://i.postimg.cc/hQgndyGG/Les-Lettres-du-Coeur-png.png" alt="Les Lettres du Cœur">
+                    <p>Lire "Les Lettres du Cœur"</p>
+                </div>
+                <div class="item" onclick="window.location.href='la_danse_des_sentiments.html';">
+                    <img src="https://i.postimg.cc/tsm9MNBr/La-Danse-des-Sentiments-png.png" alt="La Danse des Sentiments">
+                    <p>Lire "La Danse des Sentiments"</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Catégorie Science-Fiction -->
+        <div class="category">
+            <div class="category-title">Science-Fiction</div>
+            <div class="gallery">
+                <div class="item" onclick="window.location.href='l_ere_des_machines.html';">
+                    <img src="https://i.postimg.cc/GHd382Bj/L-Ere-des-Machines-png.png" alt="L'Ère des Machines">
+                    <p>Lire "L'Ère des Machines"</p>
+                </div>
+                <div class="item" onclick="window.location.href='les_gardiens_de_la_galaxie.html';">
+                    <img src="https://i.postimg.cc/bD18dcpM/Les-Gardiens-de-la-Galaxie-png.png" alt="Les Gardiens de la Galaxie">
+                    <p>Lire "Les Gardiens de la Galaxie"</p>
+                </div>
+                <div class="item" onclick="window.location.href='chroniques_d_un_monde_eteint.html';">
+                    <img src="https://i.postimg.cc/fyVVDJXt/Chroniques-d-un-Monde-Eteint-png.png" alt="Chroniques d'un Monde Éteint">
+                    <p>Lire "Chroniques d'un Monde Éteint"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
